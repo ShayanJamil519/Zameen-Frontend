@@ -1,0 +1,242 @@
+.bloglist {
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.blog-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  color: rgb(255, 255, 255);
+  height: 400px;
+  font-family: "Gentium Book Plus", serif;
+  width: 100%;
+  background-image: url("/public/bg8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-right: 100px;
+}
+
+.home-btn {
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid #a5b8c5;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.home-btn:hover {
+  background-color: rgb(221, 200, 200);
+}
+
+.yellow-color {
+  text-align: center;
+  color: white;
+  background-color: rgb(165, 165, 37);
+  border-radius: 4px;
+  padding: 3px;
+  margin: 3px;
+}
+
+.blogPreview {
+  padding: 10px 60px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  height: 200px;
+}
+
+.blogPreview:hover {
+  box-shadow: 1px 6px 5px rgba(4, 240, 141, 0.512);
+}
+
+.blogPreview h2 {
+  font-size: 20px;
+  color: rgb(8, 148, 104);
+  margin-bottom: 8px;
+}
+
+.blogPreview h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: rgb(8, 148, 104);
+  margin-bottom: 20px;
+}
+
+.blogPreview a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.blogPreview a .blogImages {
+  width: 25%;
+  height: 60%;
+  margin-top: 20px;
+}
+
+.blogPreview a .blogImages img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogPreview a .blogInfo {
+  margin-top: 18px;
+  width: 70%;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+
+/* .blogPreview p {
+    color: rgb(51, 242, 178);
+
+} */
+
+.blogPreview a .blogInfo h2 {
+  text-transform: capitalize;
+  /* text-decoration: underline; */
+  font-size: 25px;
+}
+
+.BlogViewDetails {
+  /* height: 600px; */
+  width: 100%;
+}
+
+.BlogViewDetails .blogViewHeader {
+  display: flex;
+  height: 200px;
+  width: 800px;
+  justify-content: space-evenly;
+  margin: 10px auto;
+}
+
+.BlogViewDetails .blogViewHeader .blogViewHeadInfo {
+  width: 70%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.BlogViewDetails .blogViewHeader .blogViewHeadImg {
+  width: 25%;
+  height: 60%;
+  margin-top: 30px;
+}
+.blog-heading {
+  font-size: 45px;
+  color: white;
+}
+
+.BlogViewDetails .blogViewHeader .blogViewHeadImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-verify {
+  height: 30px;
+  width: 30px;
+}
+
+.blog-title {
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+}
+
+.blog-para {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  color: rgb(99, 94, 94);
+}
+
+.BlogViewDetails h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(8, 148, 104);
+  margin-bottom: 10px;
+}
+
+.BlogViewDetails article div {
+  margin: 40px 0;
+}
+
+.blogParadetails p {
+  font-size: 18px;
+  margin-left: 5px;
+}
+@media (max-width: 574px) {
+  .blogParadetails p {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .bloglist {
+    width: 500px;
+    padding: 10px;
+    /* margin: 0 auto; */
+  }
+  .blogPreview {
+    width: 260px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    height: 250px;
+    padding-right: 0;
+    padding-left: 40px;
+  }
+  .blogPreview a {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .blogPreview a .blogInfo h2 {
+    font-size: 18px;
+  }
+  .blogPreview a .blogInfo p {
+    font-size: 15px;
+  }
+  .blogPreview a .blogImages {
+    width: 45%;
+    height: 50%;
+    margin-top: 20px;
+  }
+  .BlogViewDetails .blogViewHeader {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    margin-left: 30px;
+  }
+
+  .BlogViewDetails .blogViewHeader .blogViewHeadInfo {
+    width: 30%;
+    /* height: 100%; */
+    margin-top: 30px;
+  }
+
+  .BlogViewDetails .blogViewHeader .blogViewHeadImg {
+    width: 25%;
+    height: 40%;
+    margin-top: 0px;
+  }
+  .project-heading {
+    font-size: 30px;
+  }
+}
