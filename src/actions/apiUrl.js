@@ -1,3 +1,3 @@
 const environment = "dev";
 
-export const apiUrl = environment === "dev" ? "http://localhost:4000" : "";
+export const apiUrl = environment === "dev" ? "http://localhost:5000" : "";

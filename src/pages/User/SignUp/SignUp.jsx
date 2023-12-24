@@ -51,6 +51,7 @@ const SignUp = ({ history, location }) => {
     myForm.set("password", password);
     myForm.set("phoneNo", phoneNo);
     myForm.set("avatar", avatar);
+
     dispatch(register(myForm));
   };
 
@@ -232,7 +233,9 @@ const SignUp = ({ history, location }) => {
             >
               Forget Password ?
             </Link>
-            <input type="submit" value="Login" className="loginBtn" />
+            <button type="submit" className="loginBtn">
+              Login
+            </button>
           </form>
         </div>
 

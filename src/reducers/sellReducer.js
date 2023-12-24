@@ -30,7 +30,7 @@ export const propertyReducer = (state = { property: [] }, action) => {
     case ALL_PROPERTY_SUCCESS:
       return {
         loading: false,
-        property: action.payload.property,
+        property: action.payload.properties,
         propertyCount: action.payload.propertyCount,
         resultPerPage: action.payload.resultPerPage,
         // filteredPropertyCount: action.payload.filteredPropertyCount,

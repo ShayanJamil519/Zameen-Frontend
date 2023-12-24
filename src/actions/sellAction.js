@@ -70,7 +70,8 @@ export const getProperty =
     try {
       dispatch({ type: ALL_PROPERTY_REQUEST });
 
-      let link = `${apiUrl}/api/v1/properties?city=${keyword}&purpose=${purpose}&price[lte]=${price}&landArea[lte]=${landArea}`;
+      // let link = `${apiUrl}/api/v1/properties?city=${keyword}&purpose=${purpose}&price[lte]=${price}&landArea[lte]=${landArea}`;
+      let link = `${apiUrl}/api/v1/properties`;
 
       const { data } = await axios.get(link);
 

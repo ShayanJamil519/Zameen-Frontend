@@ -49,6 +49,7 @@ export const getProject = () => async (dispatch) => {
 
     dispatch({ type: ALL_PROJECT_SUCCESS, payload: data });
   } catch (error) {
+    console.log(error);
     dispatch({ type: ALL_PROJECT_FAIL, payload: error.response.data.message });
   }
 };

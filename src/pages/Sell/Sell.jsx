@@ -16,29 +16,18 @@ const Sell = ({ match }) => {
   // const history = useHistory();
   const alert = useAlert();
 
-  const {keyword, purpose, price, landArea} = useParams();
+  const { keyword, purpose, price, landArea } = useParams();
 
   const dispatch = useDispatch();
-  const {
-    // loading,
-    error,
-    // propertyCount,
-    // resultPerPage,
-    property,
-    filteredPropertyCount,
-  } = useSelector((state) => state.property);
-
-
-
-
+  const { error, property } = useSelector((state) => state.property);
 
   useEffect(() => {
     if (error) {
       alert.error(error);
       dispatch(clearErrors());
     }
-    dispatch(getProperty(keyword, purpose, price, landArea));
-  }, [dispatch, keyword, error, alert, purpose, price, landArea]);
+    dispatch(getProperty());
+  }, [dispatch]);
 
   return (
     <div>
@@ -50,12 +39,12 @@ const Sell = ({ match }) => {
 
       <div className="sell-container">
         <div className="sell-left">
-          <div className="sell-left-head">
+          {/* <div className="sell-left-head">
             <p>{filteredPropertyCount} result found </p>
             <button>
               <IoReloadSharp />
             </button>
-          </div>
+          </div> */}
           <div className="sell-left-body">
             {property &&
               property.map((property) => (
