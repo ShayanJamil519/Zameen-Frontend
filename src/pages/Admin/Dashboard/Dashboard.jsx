@@ -2,12 +2,8 @@ import React, { useState, useRef } from "react";
 import "./Dashboard.css";
 import Sidebar from "../Sidebar/Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineUsergroupAdd } from "react-icons/ai";
-import { FaProjectDiagram } from "react-icons/fa";
-import { FaPersonBooth } from "react-icons/fa";
- import { AiFillPropertySafety } from "react-icons/ai";
-
-
+import { AiOutlineUsergroupAdd, AiFillPropertySafety } from "react-icons/ai";
+import { FaProjectDiagram, FaPersonBooth } from "react-icons/fa";
 
 const Dashboard = () => {
   const [show, setShow] = useState("yes");
@@ -41,28 +37,28 @@ const Dashboard = () => {
           <div className="dashboard-cards">
             <div className="dashboard-card">
               <div className="dashboard-card-svg">
-                <AiOutlineUsergroupAdd style={{fontSize:"20px"}}/>
+                <AiOutlineUsergroupAdd style={{ fontSize: "20px" }} />
               </div>
               <span>50</span>
               <p>Users</p>
             </div>
             <div className="dashboard-card">
               <div className="dashboard-card-svg">
-                <AiFillPropertySafety style={{fontSize:"20px"}}/>
+                <AiFillPropertySafety style={{ fontSize: "20px" }} />
               </div>
               <span>13</span>
               <p>Property</p>
             </div>
             <div className="dashboard-card">
               <div className="dashboard-card-svg">
-                <FaProjectDiagram style={{fontSize:"20px"}}/>
+                <FaProjectDiagram style={{ fontSize: "20px" }} />
               </div>
               <span>5</span>
               <p>Projects</p>
             </div>
             <div className="dashboard-card">
               <div className="dashboard-card-svg">
-                <FaPersonBooth style={{fontSize:"20px"}}/>
+                <FaPersonBooth style={{ fontSize: "20px" }} />
               </div>
               <span>6</span>
               <p>Inverstors</p>

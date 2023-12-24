@@ -5,7 +5,6 @@ import React, {
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "./pages/AboutUs/About";
-import Blog from "./pages/Blog/BlogMain";
 import BlogViewDetails from "./pages/Blog/BlogViewDetails";
 import ProtectedRoute from "./components/Route/ProtectedRoute";
 
@@ -71,7 +70,6 @@ function App() {
           />
 
           <Route exact path="/About" component={About} />
-          <Route exact path="/Blog" component={Blog} />
           <Route exact path="/Blog/Blogdata/:id" component={BlogViewDetails} />
 
           <Route exact path="/property/:id" component={propertyDetails} />
@@ -121,7 +119,6 @@ function App() {
             path="/admin/dashboard"
             component={Dashboard}
           />
-
 
           {/* <Route exact path="/profile" component={Profile} /> */}
           <ProtectedRoute exact path="/profile" component={Profile} />

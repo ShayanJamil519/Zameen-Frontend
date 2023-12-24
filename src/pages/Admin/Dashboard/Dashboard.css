@@ -1,24 +1,19 @@
 .dashboard {
-
   height: 100vh;
-  /* background-color: aqua; */
   display: flex;
 }
 
 .admin-sidebar {
   height: 100vh;
-  /* background-color: blueviolet; */
   width: 400px;
 }
 
 .admin-container {
   height: 100vh;
-  /* background-color: darkgray; */
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0px 10px;
-
 }
 
 .dashboard-nav {
@@ -39,26 +34,24 @@
   transition: 0.5 all;
 }
 
-.sideBarMoveToLeft{
-transition: 0.5s all;
+.sideBarMoveToLeft {
+  transition: 0.5s all;
   display: none;
 }
 
-.dashboard-main{
+.dashboard-main {
   display: flex;
   flex-direction: column;
 }
 
-.dashboard-cards{
+.dashboard-cards {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid red; */
   margin-top: 1rem;
 }
 
-.dashboard-card{
-  
+.dashboard-card {
   display: flex;
   flex-direction: column;
   width: 220px;
@@ -72,21 +65,19 @@ transition: 0.5s all;
   padding-left: 20px;
 }
 
-.dashboard-card-svg{
+.dashboard-card-svg {
   margin-top: 15px;
   width: 30%;
   height: 55px;
-  /* background-color:#40bfab; */
   background-color: white;
   border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.219);
-
 }
 
-.dashboard-card > span{
+.dashboard-card > span {
   margin-left: 5px;
   margin-top: 15px;
   font-size: 1rem;
@@ -94,7 +85,7 @@ transition: 0.5s all;
   color: #222;
 }
 
-.dashboard-card > p{
+.dashboard-card > p {
   margin-top: 15px;
   margin-left: 5px;
 

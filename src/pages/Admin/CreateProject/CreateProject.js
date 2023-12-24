@@ -2,8 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import "./CreateProject.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import { Button } from "@material-ui/core";
-// import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import DescriptionIcon from "@material-ui/icons/Description";
 import StorageIcon from "@material-ui/icons/Storage";
 import SpellcheckIcon from "@material-ui/icons/Spellcheck";
@@ -20,14 +18,10 @@ const CreateProject = () => {
   const alert = useAlert();
   const history = useHistory();
   const dispatch = useDispatch();
-  const {
-    // loading,
-    error,
-    success,
-  } = useSelector((state) => state.newProject);
+  const { error, success } = useSelector((state) => state.newProject);
 
-  const [projectName, setprojectName] = useState("");
-  const [totalCap, settotalCap] = useState(0);
+  const [projectName, setProjectName] = useState("");
+  const [totalCap, setTotalCap] = useState(0);
   const [description, setDescription] = useState("");
   const [startTime, setStartTime] = useState();
   const [endTime, setEndTime] = useState();
@@ -134,7 +128,7 @@ const CreateProject = () => {
                   placeholder="Project Name"
                   required
                   value={projectName}
-                  onChange={(e) => setprojectName(e.target.value)}
+                  onChange={(e) => setProjectName(e.target.value)}
                 />
               </div>
               <div>
@@ -143,8 +137,7 @@ const CreateProject = () => {
                   type="number"
                   placeholder="total Capacity"
                   required
-                  // value={totalCap}
-                  onChange={(e) => settotalCap(e.target.value)}
+                  onChange={(e) => setTotalCap(e.target.value)}
                 />
               </div>
               <div>
@@ -174,7 +167,6 @@ const CreateProject = () => {
                 <input
                   type="text"
                   placeholder="Land Area"
-                  // value={landArea}
                   required
                   onChange={(e) => setLandArea(e.target.value)}
                 />
@@ -201,7 +193,10 @@ const CreateProject = () => {
                 />
               </div>
 
-              <label style={{ fontSize: "15px", color: "gray" }}>
+              <label
+                htmlFor="starttime"
+                style={{ fontSize: "15px", color: "gray" }}
+              >
                 Start Date
               </label>
               <div>
@@ -215,7 +210,10 @@ const CreateProject = () => {
                 />
               </div>
 
-              <label style={{ fontSize: "15px", color: "gray" }}>
+              <label
+                htmlFor="endtime"
+                style={{ fontSize: "15px", color: "gray" }}
+              >
                 End Date
               </label>
               <div>

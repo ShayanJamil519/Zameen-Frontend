@@ -1,135 +1,108 @@
-.footer-container{
-	max-width: 1170px;
-	margin:auto;
-	
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
 }
-.row{
-	display: flex;
-	flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
-.footer{
-	background-color: #24262b;
-    padding: 70px 0;
-	margin-top: 40px;
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  margin-top: 40px;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #33a137;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #33a137;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
-.footer-col ul li p{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-	font-family:sans-serif;
-	padding: 0px 0px;
-	font-weight: 500;
+.footer-col ul li p {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  padding: 0px 0px;
+  font-weight: 500;
 }
-.footer-col ul li p:hover{
-	color: #33a137;
-	padding-left: 8px;
-}
-/* .footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-	
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #33a137;
-} */
-
-.footer-col > .social-links{
-	display: flex;
-	/* border-left: 2px solid green; */
-	margin-left: -5px;
+.footer-col ul li p:hover {
+  color: #33a137;
+  padding-left: 8px;
 }
 
-.footer-col > .social-links > .footer-svgs{
-	width: 40px;
-	height: 40px;
-	background-color: #504949;
-	margin: 0px 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	padding-left: 32px;
-	border-radius: 50%;
-	padding-bottom: 5px;
-	color: white;
-
+.footer-col > .social-links {
+  display: flex;
+  margin-left: -5px;
 }
 
-
-.footer-col > .social-links > .footer-svgs:hover{
-	color: #24262b;
-	background-color: #33a137;
+.footer-col > .social-links > .footer-svgs {
+  width: 40px;
+  height: 40px;
+  background-color: #504949;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 32px;
+  border-radius: 50%;
+  padding-bottom: 5px;
+  color: white;
 }
-@media (max-width:574px){
-	.row{
-		flex-direction: column;
-		width: 100vw;
-	}
-	.footer-col{
-		width: 100vw;
 
-	}
-	.footer-col ul{
-		display: flex;
-		justify-content: space-evenly;
-		
-	}
-	.footer-col h4{
-		margin-left: 20px;
-	}
-	.footer-col ul a li p{
-		margin-right: 10px;
-	}
-	.footer-svgs>a{
-		margin-left: -16px;
-		/* margin-right: 10px; */
-
-
-	}
-	.footerMain{
-		width: 100vw;
-		/* margin-left: 120px; */
-	}
+.footer-col > .social-links > .footer-svgs:hover {
+  color: #24262b;
+  background-color: #33a137;
+}
+@media (max-width: 574px) {
+  .row {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .footer-col {
+    width: 100vw;
+  }
+  .footer-col ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-col h4 {
+    margin-left: 20px;
+  }
+  .footer-col ul a li p {
+    margin-right: 10px;
+  }
+  .footer-svgs > a {
+    margin-left: -16px;
+  }
+  .footerMain {
+    width: 100vw;
+  }
 }

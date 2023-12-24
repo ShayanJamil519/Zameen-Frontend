@@ -1,18 +1,16 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div>
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="row">
-            <div class="footer-col">
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="row">
+            <div className="footer-col">
               <h4>company</h4>
               <ul>
                 <Link to="/about" style={{ textDecoration: "none" }}>
@@ -30,10 +28,9 @@ const Footer = () => {
                     <p>privacy policy</p>
                   </li>
                 </Link>
-                
               </ul>
             </div>
-            <div class="footer-col">
+            <div className="footer-col">
               <h4>get help</h4>
               <ul>
                 <Link to="/help" style={{ textDecoration: "none" }}>
@@ -51,10 +48,9 @@ const Footer = () => {
                     <p>blog</p>
                   </li>
                 </Link>
-               
               </ul>
             </div>
-            <div class="footer-col">
+            <div className="footer-col">
               <h4>options</h4>
               <ul>
                 <Link to="/sell" style={{ textDecoration: "none" }}>
@@ -81,9 +77,9 @@ const Footer = () => {
             </div>
 
             {/* Social Links */}
-            <div class="footer-col">
+            <div className="footer-col">
               <h4>follow us</h4>
-              <div class="social-links">
+              <div className="social-links">
                 <div className="footer-svgs">
                   <Link to="/contact">
                     <FaFacebookF
