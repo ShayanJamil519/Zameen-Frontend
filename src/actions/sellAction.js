@@ -15,6 +15,7 @@ import {
   CLEAR_ERRORS,
 } from "../constants/sellContants";
 import { apiUrl } from "./apiUrl";
+import Cookies from "js-cookie";
 
 // Create Property
 export const createProperty = (propertyData) => async (dispatch) => {
@@ -22,14 +23,23 @@ export const createProperty = (propertyData) => async (dispatch) => {
     dispatch({ type: NEW_PROPERTY_REQUEST });
 
     const config = {
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        Authorization: Cookies.get("token"),
+        Cookie: `token=${Cookies.get("token")}`,
+        "Content-Type": "application/json",
+      },
     };
+
+    // Cookies.get("jwt");
 
     const { data } = await axios.post(
       `${apiUrl}/api/v1/property/new`,
       propertyData,
       config
     );
+
+    console.log("---------data");
+    console.log(data);
 
     dispatch({
       type: NEW_PROPERTY_SUCCESS,

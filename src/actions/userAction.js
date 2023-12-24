@@ -20,6 +20,7 @@ import {
   CLEAR_ERRORS,
 } from "../constants/userConstants";
 import { apiUrl } from "./apiUrl";
+import Cookies from "js-cookie";
 
 // Login:
 export const login = (email, password) => async (dispatch) => {
@@ -35,6 +36,8 @@ export const login = (email, password) => async (dispatch) => {
       { email, password },
       config
     );
+
+    Cookies.set("token", data.token, { expires: 3 });
 
     console.log("data");
     console.log(data);
