@@ -11,7 +11,7 @@
 #projectListHeading {
   font-size: 2rem;
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   padding: 0.5vmax;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.637);
@@ -28,7 +28,7 @@
 .projectListTable div {
   font-size: 1rem;
   font-weight: 300;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.678);
   border: none !important;
 }
@@ -58,6 +58,6 @@
   .projectListTable div {
     font-size: 4vw;
     font-weight: 300;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
   }
 }

@@ -10,11 +10,9 @@ import { useAlert } from "react-alert";
 import { getProject, clearErrors } from "../../../actions/projectAction";
 
 const ProjectList = () => {
-
-
   const alert = useAlert();
   const dispatch = useDispatch();
-  const { error , project } = useSelector((state) => state.project)
+  const { error, project } = useSelector((state) => state.project);
   const [show, setShow] = useState("yes");
   const sidebarTab = useRef(null);
 
@@ -38,54 +36,6 @@ const ProjectList = () => {
       setShow("yes");
     }
   };
-
-
-  // const property = [
-  //   {
-  //     _id: 1,
-  //     image: "/s1.jpg",
-  //     name: "Saima Paradise",
-  //     price: 700000,
-  //     location: "Azizabad",
-  //     description: "this is the description of project",
-  //     city: "Malir",
-  //     landArea: 150,
-  //     units: "sq. yards",
-  //     startedTime: "2-jun-22",
-  //     endTime: "2-jun-22"
-
-  //   },
-  //   {
-  //     _id: 2,
-  //     image: "/s1.jpg",
-  //     name: "Saima Paradise",
-  //     price: 500000,
-  //     location: "Azizabad",
-  //     description: "this is the description of project",
-  //     city: "Malir",
-  //     landArea: 150,
-  //     units: "sq. yards",
-  //     startedTime: "2-jun-22",
-  //     endTime: "2-jun-22"
-
-  //   },
-  //   {
-  //     _id: 3,
-  //     image: "/s1.jpg",
-  //     name: "Saima Paradise",
-  //     price: 500000,
-  //     location: "Azizabad",
-  //     description: "this is the description of project",
-  //     city: "Malir",
-  //     landArea: 150,
-  //     units: "sq. yards",
-  //     startedTime: "2-jun-22",
-  //     endTime: "2-jun-22"
-
-  //   },
-    
-    
-  // ];
 
   const columns = [
     { field: "id", headerName: "Project ID", minWidth: 250, flex: 0.5 },
@@ -115,11 +65,11 @@ const ProjectList = () => {
       flex: 0.3,
     },
     {
-        field: "price",
-        headerName: "Price",
-        type: "number",
-        minWidth: 350,
-        flex: 0.3,
+      field: "price",
+      headerName: "Price",
+      type: "number",
+      minWidth: 350,
+      flex: 0.3,
     },
     {
       field: "landArea",
@@ -157,15 +107,9 @@ const ProjectList = () => {
       sortable: false,
       renderCell: (params) => {
         return (
-          <Fragment>
-            <Button
-            // onClick={() =>
-            //   deleteProductHandler(params.getValue(params.id, "id"))
-            // }
-            >
-              <MdDelete style={{ fontSize: "1.2rem" }} />
-            </Button>
-          </Fragment>
+          <Button>
+            <MdDelete style={{ fontSize: "1.2rem" }} />
+          </Button>
         );
       },
     },
@@ -174,7 +118,7 @@ const ProjectList = () => {
   const rows = [];
 
   project &&
-    project.forEach((item) => {
+    project?.forEach((item) => {
       rows.push({
         id: item._id,
         name: item.name,
@@ -186,7 +130,6 @@ const ProjectList = () => {
         units: item.units,
         startedTime: item.startedTime,
         endTime: item.endTime,
-        
       });
     });
 
@@ -212,8 +155,7 @@ const ProjectList = () => {
               disableSelectionOnClick
               className="projectListTable"
               autoHeight
-
-              style={{textAlign: "start"}}
+              style={{ textAlign: "start" }}
             />
           </div>
         </div>

@@ -11,7 +11,7 @@
   color: rgba(0, 0, 0, 0.733);
   font-size: 2rem;
   font-weight: 300;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
@@ -91,7 +91,7 @@
   color: white;
   font-weight: 300;
   font-size: 0.9vmax;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   width: 100%;
   padding: 0.8vmax;
   cursor: pointer;
@@ -137,7 +137,7 @@
   #createProjectBtn {
     font-size: 1.9vmax;
     font-weight: 300;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     padding: 1.8vmax;
   }
 }

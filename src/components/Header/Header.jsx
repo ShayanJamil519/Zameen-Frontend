@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <div className="mainHeader">
       {menuopened === false && mobile === true ? (
-        <div
+        <button
           className="barsNav"
           onClick={() => {
             setMenuopened(true);
@@ -38,7 +38,7 @@ const Header = () => {
             src="/barz.png"
             alt=""
           />
-        </div>
+        </button>
       ) : (
         <div className="Header">
           <div className="Header-1">
@@ -142,12 +142,12 @@ const Header = () => {
               </div>
             </div>
             <div className="right-header">
-              <div
+              <button
                 className="header-collapse"
                 onClick={(e) => switchTabs(e, show)}
               >
                 <h4>{text} </h4>
-              </div>
+              </button>
               <div className="options" ref={headerTab}>
                 <ul>
                   <li className="Link-tagg">

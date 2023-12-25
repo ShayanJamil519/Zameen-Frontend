@@ -26,7 +26,6 @@ import propertyDetails from "./pages/Sell/propertyDetails";
 import ProjectDetail from "./pages/BookingProperty/ProjectDetail";
 
 import ProjectProperty from "./pages/BookingProperty/ProjectProperty";
-// import ProjectDetail from './pages/BookingProperty/ProjectDetail';
 import BlogMain from "./pages/Blog/BlogMain";
 import Dashboard from "./pages/Admin/Dashboard/Dashboard";
 import PropertyList from "./pages/Admin/PropertyList/PropertyList";
@@ -60,9 +59,7 @@ function App() {
           <ProtectedRoute exact path="/book-property/:id" component={Booking} />
           <ProtectedRoute exact path="/book-property" component={Booking} />
 
-          {/* search ki facility ispe krni he */}
           <Route exact path="/sell" component={Sell} />
-          {/* keyword: city */}
           <Route
             exact
             path="/sell/:keyword/:purpose/:price/:landArea"
@@ -84,7 +81,6 @@ function App() {
           <Route exact path="/sellDetail/:id" component={sellDetail} />
           <Route exact path="/projectDetail/:id" component={ProjectDetail} />
           <Route exact path="/projects" component={ProjectProperty} />
-          {/* <Route exact path="/admin/dashboard" component={Dashboard} /> */}
           <ProtectedRoute
             isAdmin={true}
             exact
@@ -120,7 +116,6 @@ function App() {
             component={Dashboard}
           />
 
-          {/* <Route exact path="/profile" component={Profile} /> */}
           <ProtectedRoute exact path="/profile" component={Profile} />
           <ProtectedRoute
             isAdmin={true}
@@ -128,13 +123,6 @@ function App() {
             path="/admin/proj-registeration"
             component={ProjectRegisteration}
           />
-
-          {/* <ProtectedRoute
-            isAdmin={true}
-            exact
-            path="/admin/project/registeration/:id"
-            component={ProjectRegisteration}
-          /> */}
         </Switch>
         <Footer />
       </BrowserRouter>

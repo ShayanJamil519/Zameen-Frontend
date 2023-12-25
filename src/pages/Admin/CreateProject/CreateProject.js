@@ -251,8 +251,8 @@ const CreateProject = () => {
               </div>
 
               <div id="createProjectFormImage">
-                {imagesPreview.map((image, index) => (
-                  <img key={index} src={image} alt="Project Preview" />
+                {imagesPreview.map((image, _) => (
+                  <img key={image} src={image} alt="Project Preview" />
                 ))}
               </div>
 
