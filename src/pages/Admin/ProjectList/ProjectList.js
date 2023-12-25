@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./ProjectList.css";
 import Sidebar from "../Sidebar/Sidebar";
 import { GiHamburgerMenu } from "react-icons/gi";

@@ -54,6 +54,8 @@
 
 @media screen and (max-width: 600px) {
   .userListTable div {
-    font: 300 4vw "Roboto";
+    font-weight: 300;
+    font-size: 4vw;
+    font-family: "Roboto", sans-serif;
   }
 }
