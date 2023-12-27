@@ -182,7 +182,8 @@
 
 .blogParadetails p {
   font-size: 18px;
-  margin-left: 5px;
+  width: 70%;
+  margin: 0 auto;
 }
 @media (max-width: 574px) {
   .blogParadetails p {
