@@ -33,6 +33,7 @@ const CreateProject = () => {
   const [imagesPreview, setImagesPreview] = useState([]);
   const [monthlyInstallations, setMonthlyInstallations] = useState();
   const [show, setShow] = useState("yes");
+  console.log("HIIIi")
 
   const sidebarTab = useRef(null);
 
