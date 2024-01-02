@@ -61,12 +61,24 @@ const Header = () => {
                 <li>
                   <Link
                     className="Link-tag"
-                    to="/Blog"
+                    to="/Read_Blog"
                     onClick={() => {
                       setMenuopened(false);
                     }}
                   >
-                    BLOG
+                    Read BLOG
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className="Link-tag"
+                    to="/Create_Blog"
+                    onClick={() => {
+                      setMenuopened(false);
+                    }}
+                  >
+                    Create BLOG
                   </Link>
                 </li>
 

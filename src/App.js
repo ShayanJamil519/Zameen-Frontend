@@ -34,6 +34,7 @@ import UserList from "./pages/Admin/UserList/UserList";
 import ProjectList from "./pages/Admin/ProjectList/ProjectList";
 import sellDetail from "./pages/Sell/sellDetail";
 import ProjectRegisteration from "./pages/Admin/ProjectRegisteration/ProjectRegisteration";
+import CreateBlog from "./pages/Blog/CreateBlog";
 
 function App() {
   useEffect(() => {
@@ -73,7 +74,9 @@ function App() {
           <Route exact path="/projectDetail/:id" component={ProjectDetail} />
 
           <Route exact path="/About" component={About} />
-          <Route exact path="/Blog" component={BlogMain} />
+          <Route exact path="/Read_Blog" component={BlogMain} />
+
+          <Route exact path="/Create_Blog" component={CreateBlog} />
 
           <Route exact path="/sellDetail/:id" component={sellDetail} />
           <Route exact path="/projectDetail/:id" component={ProjectDetail} />
@@ -81,11 +84,14 @@ function App() {
           <Route exact path="/admin/property" component={PropertyList} />
           <Route exact path="/admin/users" component={UserList} />
           <Route exact path="/admin/projects" component={ProjectList} />
-           <Route exact path="/admin/createProject" component={CreateProject} />
-           <Route exact path="/admin/dashboard" component={Dashboard} />
-           <Route exact path="/admin/proj-registeration" component={ProjectRegisteration} />
-           <Route exact path="/profile" component={Profile} />
-
+          <Route exact path="/admin/createProject" component={CreateProject} />
+          <Route exact path="/admin/dashboard" component={Dashboard} />
+          <Route
+            exact
+            path="/admin/proj-registeration"
+            component={ProjectRegisteration}
+          />
+          <Route exact path="/profile" component={Profile} />
         </Switch>
         <Footer />
       </BrowserRouter>

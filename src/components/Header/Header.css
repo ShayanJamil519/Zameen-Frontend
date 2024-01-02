@@ -28,7 +28,7 @@
   display: flex;
   flex: 8;
   text-align: center;
-  padding: 5px 50px;
+  /* padding: 5px 50px; */
   height: 40px;
   align-items: center;
 }
@@ -54,10 +54,10 @@
   text-decoration: none;
   list-style: none;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 21px;
+  font-size: 19px;
   transition: all 1s;
   font-weight: 500;
-  width: 20px;
+  /* width: 20px; */
 }
 
 .Link-tagg {
