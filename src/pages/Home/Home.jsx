@@ -9,7 +9,15 @@ const Home = () => {
     <div>
       <div className="landing">
         <div className="landing-search">
-          <Search />
+          <p
+            style={{
+              padding: "0 10px",
+              fontSize: "80px",
+              color: "#fff",
+            }}
+          >
+            Zameen.com
+          </p>
         </div>
       </div>
 

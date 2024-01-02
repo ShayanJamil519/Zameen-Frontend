@@ -35,6 +35,12 @@ const CreateBlog = () => {
 
   return (
     <div className="create__blog__container">
+      <div className="blog-head">
+        <h3 className="blog-heading" style={{ color: "wheat" }}>
+          Wrtie your <span className="yellow-color">Amazing Blogs</span>
+        </h3>
+      </div>
+
       <form onSubmit={handleFormSubmit} className="form__container">
         <input
           required

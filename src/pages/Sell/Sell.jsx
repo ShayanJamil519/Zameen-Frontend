@@ -33,7 +33,16 @@ const Sell = ({ match }) => {
     <div>
       <div className="sellCards-head">
         <div className="sell-search-container">
-          <Search />
+          {/* <Search /> */}
+          <p
+            style={{
+              padding: "0 10px",
+              fontSize: "80px",
+              color: "#fff",
+            }}
+          >
+            Available Properties
+          </p>
         </div>
       </div>
 
